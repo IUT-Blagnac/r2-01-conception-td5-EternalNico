@@ -1,0 +1,26 @@
+---
+title: Exercice 1 : Diagramme 
+des UC en plantUML ({{ date | 
+date('dddd, MMMM Do') }})
+---
+En vous inspirant du code 
+suivant (pour ne pas démarrer à 
+vide), réalisez un diagramme 
+des UC correspondant au sujet.
+plantuml
+
+@startuml use case
+
+usecase "Gérer les chantiers" as 1
+usecase "Gérer les artisans" as 2
+usecase "Gérer l'affectation des artisans" as 3
+usecase "Calculer la paye d'un artisan" as 4
+
+actor Entreprise 
+
+Entreprise --> 1
+Entreprise --> 2
+Entreprise --> 3
+Entreprise --> 4
+
+@enduml
